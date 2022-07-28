@@ -44,6 +44,7 @@ public class peopleOgra extends AppCompatActivity {
                 return;
             }
         }
+        change.clear();
         for(int i=0;i<ograArray.size();i++){
                 ogras.add(Double.parseDouble(ograArray.get(i).getText().toString()));
                 changeNum = ogras.get(i) - ogra;
