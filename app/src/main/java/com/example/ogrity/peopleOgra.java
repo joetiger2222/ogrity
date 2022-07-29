@@ -28,10 +28,11 @@ public class peopleOgra extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_people_ogra);
         linearLayout=findViewById(R.id.linearLayout);
+        ograArray.clear();
         for(int i=0;i<peoplenum;i++){
             editText=new EditText(this);
             editText.setHeight(200);
-            editText.setInputType(InputType.TYPE_CLASS_NUMBER);
+            editText.setInputType(InputType.TYPE_CLASS_NUMBER|InputType.TYPE_NUMBER_FLAG_DECIMAL);
             ograArray.add(editText);
             linearLayout.addView(editText);
         }
